@@ -40,7 +40,7 @@ public class IntakeMechanism implements Mechanism {
 
     public Command RampServosMove(double pos) {
         return instant(() -> {
-            LeftRampServo.setPosition(pos);
+            LeftRampServo.setPosition(1 - pos);
             RightRampServo.setPosition(pos);
         });
     }
