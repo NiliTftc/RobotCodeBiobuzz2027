@@ -16,13 +16,9 @@ public class IntakeMechanism implements Mechanism {
     NextServo LeftRampServo = new NextServo(RobotController.controlHub(), 2);
     NextServo RightRampServo = new NextServo(RobotController.controlHub(), 3);
 
-    public Command IntakePow(double pow) {
-        return infinite(() -> Intake.setThrottle(pow));
-    }
+    public Command IntakePow(double pow) { return infinite(() -> Intake.setThrottle(pow));}
 
-    public Command IntakeStop() {
-        return instant(() -> Intake.setThrottle(0.0));
-    }
+    public Command IntakeStop() {return instant(() -> Intake.setThrottle(0.0));}
 
     public Command TransmitionServosMove(double pow) {
         return infinite(() -> {
