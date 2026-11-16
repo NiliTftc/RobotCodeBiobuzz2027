@@ -1,9 +1,8 @@
-package org.firstinspires.ftc.teamcode.TeleopStaff;
+package org.firstinspires.ftc.teamcode.Mechanisms;
 
 import com.pedropathing.ivy.Command;
 
 import dev.nextftc.hardware.RobotController;
-import dev.nextftc.hardware.actuators.NextCRServo;
 import dev.nextftc.hardware.actuators.NextMotor;
 import dev.nextftc.hardware.actuators.NextServo;
 import dev.nextftc.robot.Mechanism;

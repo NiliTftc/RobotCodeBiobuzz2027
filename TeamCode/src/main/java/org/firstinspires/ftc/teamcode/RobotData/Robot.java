@@ -1,6 +1,6 @@
-package org.firstinspires.ftc.teamcode;
+package org.firstinspires.ftc.teamcode.RobotData;
 
-import org.firstinspires.ftc.teamcode.TeleopStaff.IntakeMechanism;
+import org.firstinspires.ftc.teamcode.Mechanisms.IntakeMechanism;
 import java.util.Set;
 import dev.nextftc.robot.Mechanism;
 
