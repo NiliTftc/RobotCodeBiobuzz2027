@@ -1,25 +1,12 @@
-package org.firstinspires.ftc.teamcode.Mechanism;
+package org.firstinspires.ftc.teamcode.Mechanisms;
 
-
-import static dev.nextftc.units.Units.Degrees;
 
 import com.pedropathing.ivy.Command;
-import com.qualcomm.robotcore.hardware.DigitalChannel;
-
-import org.firstinspires.ftc.teamcode.Data.PidController;
-import org.firstinspires.ftc.teamcode.Data.RobotMap;
-import org.firstinspires.ftc.teamcode.Data.StarRobot;
 
 import dev.nextftc.control.feedback.PIDController;
-import dev.nextftc.hardware.RobotController;
 import dev.nextftc.hardware.actuators.NextMotor;
-import dev.nextftc.hardware.sensors.NextDigitalSensor;
 import dev.nextftc.robot.Mechanism;
 import dev.nextftc.robot.Telemetry;
-import dev.nextftc.units.Unit;
-import dev.nextftc.units.Units;
-import dev.nextftc.units.measuretypes.Angle;
-
 
 
 public class Turret implements Mechanism {

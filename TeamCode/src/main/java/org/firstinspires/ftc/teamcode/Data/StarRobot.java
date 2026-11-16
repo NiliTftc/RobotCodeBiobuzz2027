@@ -7,10 +7,10 @@ import androidx.annotation.NonNull;
 import com.pedropathing.ivy.Command;
 import com.qualcomm.robotcore.hardware.Gamepad;
 
-import org.firstinspires.ftc.teamcode.Mechanism.Drivetrain;
-import org.firstinspires.ftc.teamcode.Mechanism.LimeLightBlue;
-import org.firstinspires.ftc.teamcode.Mechanism.LimeLightRed;
-import org.firstinspires.ftc.teamcode.Mechanism.Turret;
+import org.firstinspires.ftc.teamcode.Mechanisms.Drivetrain;
+import org.firstinspires.ftc.teamcode.Mechanisms.LimeLightBlue;
+import org.firstinspires.ftc.teamcode.Mechanisms.LimeLightRed;
+import org.firstinspires.ftc.teamcode.Mechanisms.Turret;
 
 import java.util.Set;
 

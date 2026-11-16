@@ -1,6 +1,5 @@
-package org.firstinspires.ftc.teamcode.Mechanism;
+package org.firstinspires.ftc.teamcode.Mechanisms;
 
-import dev.nextftc.hardware.RobotController;
 import dev.nextftc.hardware.actuators.NextMotor;
 import dev.nextftc.robot.Mechanism;
 
