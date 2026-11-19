@@ -1,9 +1,8 @@
-package org.firstinspires.ftc.teamcode.Autonomous;
+package org.firstinspires.ftc.teamcode;
 
 import static com.pedropathing.api.Paths.*;
 import com.pedropathing.api.Paths;
 
-import org.firstinspires.ftc.teamcode.pedro.Constants;
 import com.pedropathing.api.PoseFactory;
 import com.pedropathing.follower.Follower;
 import com.pedropathing.math.Pose;
@@ -17,7 +16,9 @@ import static com.pedropathing.ivy.pedro.PedroCommands.follow;
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 
-@Autonomous(name = "AutoPath", group = "Autonomous")
+import org.firstinspires.ftc.teamcode.pedro.Constants;
+
+@Autonomous(name = "AutoRedHighHive", group = "Autonomous")
 public class autoRedHighHive extends LinearOpMode {
 
     private Follower follower;
