@@ -8,10 +8,10 @@ import com.pedropathing.tuning.autotune.Tuner;
 import com.qualcomm.hardware.gobilda.GoBildaPinpointDriver;
 
 import org.firstinspires.ftc.robotcore.external.navigation.DistanceUnit;
-import org.firstinspires.ftc.teamcode.Pedro.procedures.ForesightTuner;
-import org.firstinspires.ftc.teamcode.Pedro.procedures.MecanumTuner;
-import org.firstinspires.ftc.teamcode.Pedro.procedures.PinpointTuner;
-import org.firstinspires.ftc.teamcode.Pedro.procedures.Tests;
+import org.firstinspires.ftc.teamcode.pedro.procedures.ForesightTuner;
+import org.firstinspires.ftc.teamcode.pedro.procedures.MecanumTuner;
+import org.firstinspires.ftc.teamcode.pedro.procedures.PinpointTuner;
+import org.firstinspires.ftc.teamcode.pedro.procedures.Tests;
 
 public class Tuning {
     @Tuner
@@ -29,11 +29,22 @@ public class Tuning {
         return new PinpointTuner();
     }
 
+//    public static PinpointConfig localizerConfig = new PinpointConfig(c -> {
+//        c.name.set("pinpoint");
+//        c.podType.set(GoBildaPinpointDriver.GoBildaOdometryPods.goBILDA_4_BAR_POD);
+//        c.xPodOffset.set(-4.148815185066283);
+//        c.yPodOffset.set(-6.7815621443620815);
+//        c.xPodDirection.set(GoBildaPinpointDriver.EncoderDirection.FORWARD);
+//        c.yPodDirection.set(GoBildaPinpointDriver.EncoderDirection.FORWARD);
+//        c.globalDistanceUnit.set(DistanceUnit.INCH);
+//        c.offsetUnits.set(DistanceUnit.INCH);
+//    });
+
     public static PinpointConfig localizerConfig = new PinpointConfig(c -> {
         c.name.set("pinpoint");
         c.podType.set(GoBildaPinpointDriver.GoBildaOdometryPods.goBILDA_4_BAR_POD);
-        c.xPodOffset.set(-4.148815185066283);
-        c.yPodOffset.set(-6.7815621443620815);
+        c.xPodOffset.set(-0.9732443141186331);
+        c.yPodOffset.set(-5.856031883419968);
         c.xPodDirection.set(GoBildaPinpointDriver.EncoderDirection.FORWARD);
         c.yPodDirection.set(GoBildaPinpointDriver.EncoderDirection.FORWARD);
         c.globalDistanceUnit.set(DistanceUnit.INCH);
