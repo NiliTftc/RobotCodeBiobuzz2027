@@ -8,6 +8,7 @@ import com.pedropathing.ivy.Command;
 import com.qualcomm.robotcore.hardware.Gamepad;
 
 import org.firstinspires.ftc.teamcode.Mechanisms.Drivetrain;
+import org.firstinspires.ftc.teamcode.Mechanisms.IntakeMechanism;
 
 import java.util.Set;
 
@@ -20,6 +21,13 @@ public class StarRobot implements NextRobot {
 
     public final Drivetrain drivetrain = new Drivetrain();
 
+    public final IntakeMechanism intakeMechanism = new IntakeMechanism();
+
+    public StarRobot(){}
+
+    public IntakeMechanism getIntakeMechanism() {
+        return intakeMechanism;
+    }
 //    public Turret getTurret() {
 //        return turret;
 //    }
@@ -42,15 +50,14 @@ public class StarRobot implements NextRobot {
 
     public Command init() {
         return parallel(
-//                turret.initialize()
+                intakeMechanism.initialize()
         );
     }
 
     @NonNull
     @Override
     public Set<Mechanism> getMechanisms() {
-        return Set.of(/*turret,*/ drivetrain);
+        return Set.of(intakeMechanism, drivetrain);
     }
-
 }
 
